@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fonts/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Webstudio</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__web">
+          <div class=header__logotip">
+            <a class="header__link" href="/"
+              >Web<span class="header__studio">Studio</span>
+            </a>
+          </div>
+          <nav class="header__navigation">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__links" href="/">Студія </a>
+              </li>
+              <li class="header__item">
+                <a class="header__links" href="./portfolio.html">Портфоліо </a>
+              </li>
+              <li class="header__item">
+                <a class="header__links" href="#">Контакти </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__info info-header">
+          <ul class="info-header__list">
+            <li class="info-header__item">
+              <svg class="info-header__svg">
+                <use
+                  class="info-header__use"
+                  href="./img/envelope.svg#envelope"
+                ></use>
+              </svg>
+              <a class="info-header__link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="info-header__item">
+              <svg class="info-header__svg">
+                <use
+                  class="info-header__use"
+                  href="./img/smartphone.svg#smartphone"
+                ></use>
+              </svg>
+              <a class="info-header__link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+          <div class="header__backdrop header__ishidden" data-modal>
+            <div class="header__modal">
+              <div class="header__times">
+                <button class="header__buttonclose" data-modal-close>
+                  <svg class="header__buttonsvg">
+                    <use
+                      class="header__buttonuse"
+                      href="./img/close.svg#close"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="header__center">
+                <h1 class="header__titlebackdrop">
+                  Залиште свої дані, ми вам передзвонимо
+                </h1>
+                <ul class="header__listbackdrop">
+                  <li class="header__itembackdrop">
+                    <p class="header__textbackdrop">Ім'я</p>
+                    <div class="header__contacts">
+                      <input
+                        class="header__input header__input-one"
+                        id="adress"
+                        autofocus
+                        type="text"
+                        name="Ім'я"
+                        autocomplete="on"
+                      />
+                    </div>
+                  </li>
+                  <li class="header__item-backdrop">
+                    <p class="header__text-backdrop">Телефон</p>
+                    <div class="header__contacts">
+                      <input
+                        class="header__input header__inputtwo"
+                        id="telefon"
+                        autofocus
+                        type="text"
+                        name="Ім'я"
+                        autocomplete="on"
+                      />
+                    </div>
+                  </li>
+                  <li class="header__itembackdrop">
+                    <p class="header__textbackdrop">Пошта</p>
+                    <div class="header__contacts">
+                      <input
+                        class="header__input header__inputthree"
+                        id="adress"
+                        autofocus
+                        type="email"
+                        name="Ім'я"
+                        autocomplete="on"
+                      />
+                    </div>
+                  </li>
+                  <li class="header__itembackdrop">
+                    <p class="header__textbackdrop">Коментар</p>
+                    <div class="header__contacts">
+                      <textarea
+                        class="header__textareacomments"
+                        name="person-black"
+                        id=""
+                        cols="30"
+                        rows="10"
+                        placeholder="Введіть текст"
+                      ></textarea>
+                    </div>
+                  </li>
+                </ul>
+                <div class="header__terms">
+                  <input type="checkbox" class="header__forminput" />
+                  <p class="header__textterms">
+                    Погоджуюся з розсилкою та приймаю
+                    <a class="header__linkterms">Умови договору</a>
+                  </p>
+                </div>
+                <button class="header__button">Відправити</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page menu-page">
+      <section class="menu-page__gallary gallary-page">
+        <div class="gallary-page__container container">
+          <h1 class="gallary-page__title">
+            ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ
+          </h1>
+          <button class="gallary-page__button" data-modal-open>
+            замовити послугу
+          </button>
+        </div>
+      </section>
+      <section class="menu-page__details details-page">
+        <div class="details-page__container container">
+          <ul class="details-page__list">
+            <li class="details-page__item">
+              <div class="details-page__background">
+                <img
+                  class="details-page__img"
+                  src="./img/antenna-one.svg"
+                  alt=""
+                />
+              </div>
+              <h4 class="details-page__title">УВАГА ДО ДЕТАЛЕЙ</h4>
+              <p class="details-page__text">
+                Ідейні міркування,i навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="details-page__item">
+              <div class="details-page__background">
+                <img
+                  class="details-page__img"
+                  src="./img/clock-one.svg"
+                  alt=""
+                />
+              </div>
+              <h4 class="details-page__title">ПУНКТУАЛЬНІСТЬ</h4>
+              <p class="details-page__text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="details-page__item">
+              <div class="details-page__background">
+                <img
+                  class="details-page__img"
+                  src="./img/diagram-one.svg"
+                  alt=""
+                />
+              </div>
+              <h4 class="details-page__title">ПЛАНУВАННЯ</h4>
+              <p class="details-page__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="details-page__item">
+              <div class="details-page__background">
+                <img
+                  class="details-page__img"
+                  src="./img/astronaut-one.svg"
+                  alt=""
+                />
+              </div>
+              <h4 class="details-page__title">СУЧАСНІ ТЕХНОЛОГІЇ</h4>
+              <p class="details-page__text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="menu-page__work work-page">
+        <div class="work-page__container container">
+          <h2 class="work-page__title">Чим ми займаємося</h2>
+          <ul class="work-page__list">
+            <li class="work-page__item">
+              <img
+                class="work-page__img"
+                src="./img/1.jpg"
+                height="230"
+                alt=""
+              />
+              <div class="work-page__submenu">
+                <p class="work-page__text">Десктопні додатки</p>
+              </div>
+            </li>
+            <li class="work-page__item">
+              <img
+                class="work-page__img"
+                src="./img/2.jpg"
+                height="230"
+                alt=""
+              />
+              <div class="work-page__submenu">
+                <p class="work-page__text">Мобільні додатки</p>
+              </div>
+            </li>
+            <li class="work-page__item">
+              <img
+                class="work-page__img"
+                src="./img/3.jpg"
+                height="230"
+                alt=""
+              />
+              <div class="work-page__submenu">
+                <p class="work-page__text">Дизайнерські рішення</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="menu-page__team team-page">
+        <div class="team-page__container container">
+          <h2 class="team-page__name">Наша команда</h2>
+          <ul class="team-page__list">
+            <li class="team-page__item">
+              <div class="team-page__peoples">
+                <img
+                  class="team-page__img"
+                  src="./img/4.jpg"
+                  height="140"
+                  alt=""
+                />
+                <div class="team-page__peopl">
+                  <h5 class="team-page__people">Ігор Дем'яненко</h5>
+                  <h6 class="team-page__mission">Product Designer</h6>
+                  <ul class="team-page__lists">
+                    <li class="team-page__items">
+                      <a
+                        target="_blank"
+                        href="https://www.instagram.com/"
+                        class="team-page__link"
+                      >
+                        <svg class="team-page__svg">
+                          <use
+                            class="team-page__use"
+                            href="./img/instagram 2.svg#instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-page__items">
+                      <a
+                        target="_blank"
+                        href="https://twitter.com/i/flow/login"
+                        class="team-page__link"
+                      >
+                        <svg class="team-page__svg">
+                          <use
+                            class="team-page__use"
+                            href="./img/twitter 1.svg#twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-page__items">
+                      <a
+                        target="_blank"
+                        href="https://uk-ua.facebook.com/"
+                        class="team-page__link"
+                      >
+                        <svg class="team-page__svg">
+                          <use
+                            class="team-page__use"
+                            href="./img/facebook.svg#facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-page__items">
+                      <a
+                        target="_blank"
+                        href="https://www.linkedin.com/"
+                        class="team-page__link"
+                      >
+                        <svg class="team-page__svg">
+                          <use
+                            class="team-page__use"
+                            href="./img/linkedin.svg#linkedin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="team-page__item">
+              <div class="team-page__peoples">
+                <img
+                  class="team-page__img"
+                  src="./img/5.jpg"
+                  height="140"
+                  alt=""
+                />
+                <div class="team-page__peopl">
+                  <h5 class="team-page__people">Ольга Рєпіна</h5>
+                  <h6 class="team-page__mission">Frontend Developer</h6>
+                  <ul class="team-page__lists">
+                    <li class="team-page__items">
+                      <a
+                        target="_blank"
+                        href="https://www.instagram.com/"
+                        class="team-page__link"
+                      >
+                        <svg class="team-page__svg">
+                          <use
+                            class="team-page__use"
+                            href="./img/instagram 2.svg#instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-page__items">
+                      <a
+                        target="_blank"
+                        href="https://twitter.com/i/flow/login"
+                        class="team-page__link"
+                      >
+                        <svg class="team-page__svg">
+                          <use
+                            class="team-page__use"
+                            href="./img/twitter 1.svg#twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-page__items">
+                      <a
+                        target="_blank"
+                        href="https://uk-ua.facebook.com/"
+                        class="team-page__link"
+                      >
+                        <svg class="team-page__svg">
+                          <use
+                            class="team-page__use"
+                            href="./img/facebook.svg#facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-page__items">
+                      <a
+                        target="_blank"
+                        href="https://www.linkedin.com/"
+                        class="team-page__link"
+                      >
+                        <svg class="team-page__svg">
+                          <use
+                            class="team-page__use"
+                            href="./img/linkedin.svg#linkedin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="team-page__item">
+              <div class="team-page__peoples">
+                <img
+                  class="team-page__img"
+                  src="./img/6.jpg"
+                  height="140"
+                  alt=""
+                />
+                <div class="team-page__peopl">
+                  <h5 class="team-page__people">Микола Тарасов</h5>
+                  <h6 class="team-page__mission">Marketing</h6>
+                  <ul class="team-page__lists">
+                    <li class="team-page__items">
+                      <a
+                        target="_blank"
+                        href="https://www.instagram.com/"
+                        class="team-page__link"
+                      >
+                        <svg class="team-page__svg">
+                          <use
+                            class="team-page__use"
+                            href="./img/instagram 2.svg#instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-page__items">
+                      <a
+                        target="_blank"
+                        href="https://twitter.com/i/flow/login"
+                        class="team-page__link"
+                      >
+                        <svg class="team-page__svg">
+                          <use
+                            class="team-page__use"
+                            href="./img/twitter 1.svg#twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-page__items">
+                      <a
+                        target="_blank"
+                        href="https://uk-ua.facebook.com/"
+                        class="team-page__link"
+                      >
+                        <svg class="team-page__svg">
+                          <use
+                            class="team-page__use"
+                            href="./img/facebook.svg#facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-page__items">
+                      <a
+                        target="_blank"
+                        href="https://www.linkedin.com/"
+                        class="team-page__link"
+                      >
+                        <svg class="team-page__svg">
+                          <use
+                            class="team-page__use"
+                            href="./img/linkedin.svg#linkedin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="team-page__item">
+              <div class="team-page__peoples">
+                <img
+                  class="team-page__img"
+                  src="./img/7.jpg"
+                  height="140"
+                  alt=""
+                />
+                <div class="team-page__peopl">
+                  <h5 class="team-page__people">Михайло Єрмаков</h5>
+                  <h6 class="team-page__mission">UI Designer</h6>
+                  <ul class="team-page__lists">
+                    <li class="team-page__items">
+                      <a
+                        target="_blank"
+                        href="https://www.instagram.com/"
+                        class="team-page__link"
+                      >
+                        <svg class="team-page__svg">
+                          <use
+                            class="team-page__use"
+                            href="./img/instagram 2.svg#instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-page__items">
+                      <a
+                        target="_blank"
+                        href="https://twitter.com/i/flow/login"
+                        class="team-page__link"
+                      >
+                        <svg class="team-page__svg">
+                          <use
+                            class="team-page__use"
+                            href="./img/twitter 1.svg#twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-page__items">
+                      <a
+                        target="_blank"
+                        href="https://uk-ua.facebook.com/"
+                        class="team-page__link"
+                      >
+                        <svg class="team-page__svg">
+                          <use
+                            class="team-page__use"
+                            href="./img/facebook.svg#facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="team-page__items">
+                      <a
+                        target="_blank"
+                        href="https://www.linkedin.com/"
+                        class="team-page__link"
+                      >
+                        <svg class="team-page__svg">
+                          <use
+                            class="team-page__use"
+                            href="./img/linkedin.svg#linkedin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="menu-page__customers customers-page">
+        <div class="customers-page__container container">
+          <h6 class="customers-page__title">Постійні клієнти</h6>
+          <ul class="customers-page__list">
+            <li class="customers-page__item">
+              <a
+                class="customers-page__link"
+                target="_blank"
+                href="https://kahoot.it/"
+              >
+                <svg class="customers-page__svg">
+                  <use
+                    class="customers-page__use"
+                    href="./img/logo.svg#logoOne"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-page__item">
+              <a
+                class="customers-page__link"
+                target="_blank"
+                href="https://www.youtube.com/"
+              >
+                <svg class="customers-page__svg">
+                  <use
+                    class="customers-page__use"
+                    href="./img/logo2 (1).svg#logoTwo"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-page__item">
+              <a
+                class="customers-page__link"
+                target="_blank"
+                href="https://github.com/"
+              >
+                <svg class="customers-page__svg">
+                  <use
+                    class="customers-page__use"
+                    href="./img/logo3.svg#logoThree"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-page__item">
+              <a
+                class="customers-page__link"
+                target="_blank"
+                href="https://www.canva.com/"
+              >
+                <svg class="customers-page__svg">
+                  <use
+                    class="customers-page__use"
+                    href="./img/logo4.svg#logoFour"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-page__item">
+              <a
+                class="customers-page__link"
+                target="_blank"
+                href="https://htmlreference.io/"
+              >
+                <svg class="customers-page__svg">
+                  <use
+                    class="customers-page__use"
+                    href="./img/logo5.svg#logoFive"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-page__item">
+              <a
+                class="customers-page__link"
+                target="_blank"
+                href="https://www.tiktok.com/uk-UA/"
+              >
+                <svg class="customers-page__svg">
+                  <use
+                    class="customers-page__use"
+                    href="./img/logo6.svg#logoSix"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__wrapper">
+          <div class="footer__left">
+            <div class="footer__footers">
+              <div class="footer__webstudio">
+                <a class="foote__link" href="#">
+                  Web<span class="footer__studio">Studio</span>
+                </a>
+              </div>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <h5 class="footer__title">м. Київ, пр-т Лесі Українки, 26</h5>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__links" href="mailto:info@devstudio.com">
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__links" href="tel:+380961111111">
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__center">
+              <h3 class="footer__titles">приєднуйтесь</h3>
+              <ul class="footer__lists">
+                <li class="footer__items">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/"
+                    class="footer__linkss"
+                  >
+                    <svg class="footer__svg">
+                      <use
+                        class="footer__use"
+                        href="./img/instagram 2.svg#instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__items">
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/i/flow/login"
+                    class="footer__linkss"
+                  >
+                    <svg class="footer__svg">
+                      <use
+                        class="footer__use"
+                        href="./img/twitter 1.svg#twitter"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__items">
+                  <a
+                    target="_blank"
+                    href="https://uk-ua.facebook.com/"
+                    class="footer__linkss"
+                  >
+                    <svg class="footer__svg">
+                      <use
+                        class="footer__use"
+                        href="./img/facebook.svg#facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__items">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/"
+                    class="footer__linkss"
+                  >
+                    <svg class="footer__svg">
+                      <use
+                        class="footer__use"
+                        href="./img/linkedin.svg#linkedin"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__right">
+              <p class="footer__textright">Підпишіться на розсилку</p>
+              <div class="footer__togehter">
+                <input
+                  class="footer__input"
+                  id="adress"
+                  autofocus
+                  type="email"
+                  name="E-mail"
+                  autocomplete="on"
+                  placeholder="E-mail"
+                />
+                <button class="footer__buttonright">
+                  <a href="" class="footer__linkright"> Підписатися </a>
+                  <svg class="footer__svgright">
+                    <use
+                      class="footer__useright"
+                      href="./img/icon send.svg#send"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
