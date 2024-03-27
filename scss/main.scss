@@ -24,7 +24,7 @@ body {
 }
 
 //! Import components
-@import "./components/header.scss";
+@import "./components/header.scss", "./components/footer.scss";
 
 //! Import pages
-@import "./pages/home.scss"; 
+@import "./pages/home.scss", "./pages/portfolio.scss"; 

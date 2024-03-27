@@ -70,25 +70,26 @@
           <div class="header__backdrop header__ishidden" data-modal>
             <div class="header__modal">
               <div class="header__times">
-                <button class="header__buttonclose" data-modal-close>
-                  <svg class="header__buttonsvg">
+                <button class="header__close" data-modal-close>
+                  <svg class="header__svg">
                     <use
-                      class="header__buttonuse"
+                      class="header__use"
                       href="./img/close.svg#close"
                     ></use>
                   </svg>
                 </button>
               </div>
               <div class="header__center">
-                <h1 class="header__titlebackdrop">
+                <div class="header__backdrop backdrop-header">
+                <h1 class="backdrop-header__title">
                   Залиште свої дані, ми вам передзвонимо
                 </h1>
-                <ul class="header__listbackdrop">
-                  <li class="header__itembackdrop">
-                    <p class="header__textbackdrop">Ім'я</p>
-                    <div class="header__contacts">
+                <ul class="backdrop-header__list">
+                  <li class="backdrop-header__item">
+                    <p class="backdrop-header__text">Ім'я</p>
+                    <div class="backdrop-header__contacts">
                       <input
-                        class="header__input header__input-one"
+                        class="backdrop-header__input backdrop-header__one"
                         id="adress"
                         autofocus
                         type="text"
@@ -97,11 +98,11 @@
                       />
                     </div>
                   </li>
-                  <li class="header__item-backdrop">
-                    <p class="header__text-backdrop">Телефон</p>
-                    <div class="header__contacts">
+                  <li class="backdrop-header__item">
+                    <p class="backdrop-header__text">Телефон</p>
+                    <div class="backdrop-header__contacts">
                       <input
-                        class="header__input header__inputtwo"
+                        class="backdrop-header__input backdrop-header__two"
                         id="telefon"
                         autofocus
                         type="text"
@@ -110,11 +111,11 @@
                       />
                     </div>
                   </li>
-                  <li class="header__itembackdrop">
-                    <p class="header__textbackdrop">Пошта</p>
-                    <div class="header__contacts">
+                  <li class="backdrop-header__item">
+                    <p class="backdrop-header__text">Пошта</p>
+                    <div class="backdrop-header__contacts">
                       <input
-                        class="header__input header__inputthree"
+                        class="backdrop-header__input backdrop-header__three"
                         id="adress"
                         autofocus
                         type="email"
@@ -123,11 +124,11 @@
                       />
                     </div>
                   </li>
-                  <li class="header__itembackdrop">
-                    <p class="header__textbackdrop">Коментар</p>
-                    <div class="header__contacts">
+                  <li class="backdrop-header__item">
+                    <p class="backdrop-header__text">Коментар</p>
+                    <div class="backdrop-header__contacts">
                       <textarea
-                        class="header__textareacomments"
+                        class="backdrop-header__textarea"
                         name="person-black"
                         id=""
                         cols="30"
@@ -137,11 +138,12 @@
                     </div>
                   </li>
                 </ul>
-                <div class="header__terms">
-                  <input type="checkbox" class="header__forminput" />
-                  <p class="header__textterms">
+              </div>
+                <div class="header__terms terms-header">
+                  <input type="checkbox" class="terms-header__form" />
+                  <p class="terms-header__text">
                     Погоджуюся з розсилкою та приймаю
-                    <a class="header__linkterms">Умови договору</a>
+                    <a class="terms-header__link">Умови договору</a>
                   </p>
                 </div>
                 <button class="header__button">Відправити</button>
@@ -151,71 +153,71 @@
         </div>
       </div>
     </header>
-    <main class="page menu-page">
-      <section class="menu-page__gallary gallary-page">
-        <div class="gallary-page__container container">
-          <h1 class="gallary-page__title">
+    <main class="page page__home home">
+      <section class="home__gallary gallary-home">
+        <div class="gallary-home__container container">
+          <h1 class="gallary-home__title">
             ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ
           </h1>
-          <button class="gallary-page__button" data-modal-open>
+          <button class="gallary-home__button" data-modal-open>
             замовити послугу
           </button>
         </div>
       </section>
-      <section class="menu-page__details details-page">
-        <div class="details-page__container container">
-          <ul class="details-page__list">
-            <li class="details-page__item">
-              <div class="details-page__background">
+      <section class="home__details details-home">
+        <div class="details-home__container container">
+          <ul class="details-home__list">
+            <li class="details-home__item">
+              <div class="details-home__background">
                 <img
-                  class="details-page__img"
+                  class="details-home__img"
                   src="./img/antenna-one.svg"
                   alt=""
                 />
               </div>
-              <h4 class="details-page__title">УВАГА ДО ДЕТАЛЕЙ</h4>
-              <p class="details-page__text">
+              <h4 class="details-home__title">УВАГА ДО ДЕТАЛЕЙ</h4>
+              <p class="details-home__text">
                 Ідейні міркування,i навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="details-page__item">
-              <div class="details-page__background">
+            <li class="details-home__item">
+              <div class="details-home__background">
                 <img
-                  class="details-page__img"
+                  class="details-home__img"
                   src="./img/clock-one.svg"
                   alt=""
                 />
               </div>
-              <h4 class="details-page__title">ПУНКТУАЛЬНІСТЬ</h4>
-              <p class="details-page__text">
+              <h4 class="details-home__title">ПУНКТУАЛЬНІСТЬ</h4>
+              <p class="details-home__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="details-page__item">
-              <div class="details-page__background">
+            <li class="details-home__item">
+              <div class="details-home__background">
                 <img
-                  class="details-page__img"
+                  class="details-home__img"
                   src="./img/diagram-one.svg"
                   alt=""
                 />
               </div>
-              <h4 class="details-page__title">ПЛАНУВАННЯ</h4>
-              <p class="details-page__text">
+              <h4 class="details-home__title">ПЛАНУВАННЯ</h4>
+              <p class="details-home__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="details-page__item">
-              <div class="details-page__background">
+            <li class="details-home__item">
+              <div class="details-home__background">
                 <img
-                  class="details-page__img"
+                  class="details-home__img"
                   src="./img/astronaut-one.svg"
                   alt=""
                 />
               </div>
-              <h4 class="details-page__title">СУЧАСНІ ТЕХНОЛОГІЇ</h4>
-              <p class="details-page__text">
+              <h4 class="details-home__title">СУЧАСНІ ТЕХНОЛОГІЇ</h4>
+              <p class="details-home__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -223,113 +225,113 @@
           </ul>
         </div>
       </section>
-      <section class="menu-page__work work-page">
-        <div class="work-page__container container">
-          <h2 class="work-page__title">Чим ми займаємося</h2>
-          <ul class="work-page__list">
-            <li class="work-page__item">
+      <section class="home__work work-home">
+        <div class="work-home__container container">
+          <h2 class="work-home__title">Чим ми займаємося</h2>
+          <ul class="work-home__list">
+            <li class="work-home__item">
               <img
-                class="work-page__img"
+                class="work-home__img"
                 src="./img/1.jpg"
                 height="230"
                 alt=""
               />
-              <div class="work-page__submenu">
-                <p class="work-page__text">Десктопні додатки</p>
+              <div class="work-home__submenu">
+                <p class="work-home__text">Десктопні додатки</p>
               </div>
             </li>
-            <li class="work-page__item">
+            <li class="work-home__item">
               <img
-                class="work-page__img"
+                class="work-home__img"
                 src="./img/2.jpg"
                 height="230"
                 alt=""
               />
-              <div class="work-page__submenu">
-                <p class="work-page__text">Мобільні додатки</p>
+              <div class="work-home__submenu">
+                <p class="work-home__text">Мобільні додатки</p>
               </div>
             </li>
-            <li class="work-page__item">
+            <li class="work-home__item">
               <img
-                class="work-page__img"
+                class="work-home__img"
                 src="./img/3.jpg"
                 height="230"
                 alt=""
               />
-              <div class="work-page__submenu">
-                <p class="work-page__text">Дизайнерські рішення</p>
+              <div class="work-home__submenu">
+                <p class="work-home__text">Дизайнерські рішення</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="menu-page__team team-page">
-        <div class="team-page__container container">
-          <h2 class="team-page__name">Наша команда</h2>
-          <ul class="team-page__list">
-            <li class="team-page__item">
-              <div class="team-page__peoples">
+      <section class="home__team team-home">
+        <div class="team-home__container container">
+          <h2 class="team-home__name">Наша команда</h2>
+          <ul class="team-home__list">
+            <li class="team-home__item">
+              <div class="team-home__peoples">
                 <img
-                  class="team-page__img"
+                  class="team-home__img"
                   src="./img/4.jpg"
                   height="140"
                   alt=""
                 />
-                <div class="team-page__peopl">
-                  <h5 class="team-page__people">Ігор Дем'яненко</h5>
-                  <h6 class="team-page__mission">Product Designer</h6>
-                  <ul class="team-page__lists">
-                    <li class="team-page__items">
+                <div class="team-home__peopl">
+                  <h5 class="team-home__people">Ігор Дем'яненко</h5>
+                  <h6 class="team-home__mission">Product Designer</h6>
+                  <ul class="team-home__lists">
+                    <li class="team-home__items">
                       <a
                         target="_blank"
                         href="https://www.instagram.com/"
-                        class="team-page__link"
+                        class="team-home__link"
                       >
-                        <svg class="team-page__svg">
+                        <svg class="team-home__svg">
                           <use
-                            class="team-page__use"
+                            class="team-home__use"
                             href="./img/instagram 2.svg#instagram"
                           ></use>
                         </svg>
                       </a>
                     </li>
-                    <li class="team-page__items">
+                    <li class="team-home__items">
                       <a
                         target="_blank"
                         href="https://twitter.com/i/flow/login"
-                        class="team-page__link"
+                        class="team-home__link"
                       >
-                        <svg class="team-page__svg">
+                        <svg class="team-home__svg">
                           <use
-                            class="team-page__use"
+                            class="team-home__use"
                             href="./img/twitter 1.svg#twitter"
                           ></use>
                         </svg>
                       </a>
                     </li>
-                    <li class="team-page__items">
+                    <li class="team-home__items">
                       <a
                         target="_blank"
                         href="https://uk-ua.facebook.com/"
-                        class="team-page__link"
+                        class="team-home__link"
                       >
-                        <svg class="team-page__svg">
+                        <svg class="team-home__svg">
                           <use
-                            class="team-page__use"
+                            class="team-home__use"
                             href="./img/facebook.svg#facebook"
                           ></use>
                         </svg>
                       </a>
                     </li>
-                    <li class="team-page__items">
+                    <li class="team-home__items">
                       <a
                         target="_blank"
                         href="https://www.linkedin.com/"
-                        class="team-page__link"
+                        class="team-home__link"
                       >
-                        <svg class="team-page__svg">
+                        <svg class="team-home__svg">
                           <use
-                            class="team-page__use"
+                            class="team-home__use"
                             href="./img/linkedin.svg#linkedin"
                           ></use>
                         </svg>
@@ -339,69 +341,69 @@
                 </div>
               </div>
             </li>
-            <li class="team-page__item">
-              <div class="team-page__peoples">
+            <li class="team-home__item">
+              <div class="team-home__peoples">
                 <img
-                  class="team-page__img"
+                  class="team-home__img"
                   src="./img/5.jpg"
                   height="140"
                   alt=""
                 />
-                <div class="team-page__peopl">
-                  <h5 class="team-page__people">Ольга Рєпіна</h5>
-                  <h6 class="team-page__mission">Frontend Developer</h6>
-                  <ul class="team-page__lists">
-                    <li class="team-page__items">
+                <div class="team-home__peopl">
+                  <h5 class="team-home__people">Ольга Рєпіна</h5>
+                  <h6 class="team-home__mission">Frontend Developer</h6>
+                  <ul class="team-home__lists">
+                    <li class="team-home__items">
                       <a
                         target="_blank"
                         href="https://www.instagram.com/"
-                        class="team-page__link"
+                        class="team-home__link"
                       >
-                        <svg class="team-page__svg">
+                        <svg class="team-home__svg">
                           <use
-                            class="team-page__use"
+                            class="team-home__use"
                             href="./img/instagram 2.svg#instagram"
                           ></use>
                         </svg>
                       </a>
                     </li>
-                    <li class="team-page__items">
+                    <li class="team-home__items">
                       <a
                         target="_blank"
                         href="https://twitter.com/i/flow/login"
-                        class="team-page__link"
+                        class="team-home__link"
                       >
-                        <svg class="team-page__svg">
+                        <svg class="team-home__svg">
                           <use
-                            class="team-page__use"
+                            class="team-home__use"
                             href="./img/twitter 1.svg#twitter"
                           ></use>
                         </svg>
                       </a>
                     </li>
-                    <li class="team-page__items">
+                    <li class="team-home__items">
                       <a
                         target="_blank"
                         href="https://uk-ua.facebook.com/"
-                        class="team-page__link"
+                        class="team-home__link"
                       >
-                        <svg class="team-page__svg">
+                        <svg class="team-home__svg">
                           <use
-                            class="team-page__use"
+                            class="team-home__use"
                             href="./img/facebook.svg#facebook"
                           ></use>
                         </svg>
                       </a>
                     </li>
-                    <li class="team-page__items">
+                    <li class="team-home__items">
                       <a
                         target="_blank"
                         href="https://www.linkedin.com/"
-                        class="team-page__link"
+                        class="team-home__link"
                       >
-                        <svg class="team-page__svg">
+                        <svg class="team-home__svg">
                           <use
-                            class="team-page__use"
+                            class="team-home__use"
                             href="./img/linkedin.svg#linkedin"
                           ></use>
                         </svg>
@@ -411,69 +413,69 @@
                 </div>
               </div>
             </li>
-            <li class="team-page__item">
-              <div class="team-page__peoples">
+            <li class="team-home__item">
+              <div class="team-home__peoples">
                 <img
-                  class="team-page__img"
+                  class="team-home__img"
                   src="./img/6.jpg"
                   height="140"
                   alt=""
                 />
-                <div class="team-page__peopl">
-                  <h5 class="team-page__people">Микола Тарасов</h5>
-                  <h6 class="team-page__mission">Marketing</h6>
-                  <ul class="team-page__lists">
-                    <li class="team-page__items">
+                <div class="team-home__peopl">
+                  <h5 class="team-home__people">Микола Тарасов</h5>
+                  <h6 class="team-home__mission">Marketing</h6>
+                  <ul class="team-home__lists">
+                    <li class="team-home__items">
                       <a
                         target="_blank"
                         href="https://www.instagram.com/"
-                        class="team-page__link"
+                        class="team-home__link"
                       >
-                        <svg class="team-page__svg">
+                        <svg class="team-home__svg">
                           <use
-                            class="team-page__use"
+                            class="team-home__use"
                             href="./img/instagram 2.svg#instagram"
                           ></use>
                         </svg>
                       </a>
                     </li>
-                    <li class="team-page__items">
+                    <li class="team-home__items">
                       <a
                         target="_blank"
                         href="https://twitter.com/i/flow/login"
-                        class="team-page__link"
+                        class="team-home__link"
                       >
-                        <svg class="team-page__svg">
+                        <svg class="team-home__svg">
                           <use
-                            class="team-page__use"
+                            class="team-home__use"
                             href="./img/twitter 1.svg#twitter"
                           ></use>
                         </svg>
                       </a>
                     </li>
-                    <li class="team-page__items">
+                    <li class="team-home__items">
                       <a
                         target="_blank"
                         href="https://uk-ua.facebook.com/"
-                        class="team-page__link"
+                        class="team-home__link"
                       >
-                        <svg class="team-page__svg">
+                        <svg class="team-home__svg">
                           <use
-                            class="team-page__use"
+                            class="team-home__use"
                             href="./img/facebook.svg#facebook"
                           ></use>
                         </svg>
                       </a>
                     </li>
-                    <li class="team-page__items">
+                    <li class="team-home__items">
                       <a
                         target="_blank"
                         href="https://www.linkedin.com/"
-                        class="team-page__link"
+                        class="team-home__link"
                       >
-                        <svg class="team-page__svg">
+                        <svg class="team-home__svg">
                           <use
-                            class="team-page__use"
+                            class="team-home__use"
                             href="./img/linkedin.svg#linkedin"
                           ></use>
                         </svg>
@@ -483,69 +485,69 @@
                 </div>
               </div>
             </li>
-            <li class="team-page__item">
-              <div class="team-page__peoples">
+            <li class="team-home__item">
+              <div class="team-home__peoples">
                 <img
-                  class="team-page__img"
+                  class="team-home__img"
                   src="./img/7.jpg"
                   height="140"
                   alt=""
                 />
-                <div class="team-page__peopl">
-                  <h5 class="team-page__people">Михайло Єрмаков</h5>
-                  <h6 class="team-page__mission">UI Designer</h6>
-                  <ul class="team-page__lists">
-                    <li class="team-page__items">
+                <div class="team-home__peopl">
+                  <h5 class="team-home__people">Михайло Єрмаков</h5>
+                  <h6 class="team-home__mission">UI Designer</h6>
+                  <ul class="team-home__lists">
+                    <li class="team-home__items">
                       <a
                         target="_blank"
                         href="https://www.instagram.com/"
-                        class="team-page__link"
+                        class="team-home__link"
                       >
-                        <svg class="team-page__svg">
+                        <svg class="team-home__svg">
                           <use
-                            class="team-page__use"
+                            class="team-home__use"
                             href="./img/instagram 2.svg#instagram"
                           ></use>
                         </svg>
                       </a>
                     </li>
-                    <li class="team-page__items">
+                    <li class="team-home__items">
                       <a
                         target="_blank"
                         href="https://twitter.com/i/flow/login"
-                        class="team-page__link"
+                        class="team-home__link"
                       >
-                        <svg class="team-page__svg">
+                        <svg class="team-home__svg">
                           <use
-                            class="team-page__use"
+                            class="team-home__use"
                             href="./img/twitter 1.svg#twitter"
                           ></use>
                         </svg>
                       </a>
                     </li>
-                    <li class="team-page__items">
+                    <li class="team-home__items">
                       <a
                         target="_blank"
                         href="https://uk-ua.facebook.com/"
-                        class="team-page__link"
+                        class="team-home__link"
                       >
-                        <svg class="team-page__svg">
+                        <svg class="team-home__svg">
                           <use
-                            class="team-page__use"
+                            class="team-home__use"
                             href="./img/facebook.svg#facebook"
                           ></use>
                         </svg>
                       </a>
                     </li>
-                    <li class="team-page__items">
+                    <li class="team-home__items">
                       <a
                         target="_blank"
                         href="https://www.linkedin.com/"
-                        class="team-page__link"
+                        class="team-home__link"
                       >
-                        <svg class="team-page__svg">
+                        <svg class="team-home__svg">
                           <use
-                            class="team-page__use"
+                            class="team-home__use"
                             href="./img/linkedin.svg#linkedin"
                           ></use>
                         </svg>
@@ -558,89 +560,89 @@
           </ul>
         </div>
       </section>
-      <section class="menu-page__customers customers-page">
-        <div class="customers-page__container container">
-          <h6 class="customers-page__title">Постійні клієнти</h6>
-          <ul class="customers-page__list">
-            <li class="customers-page__item">
+      <section class="home__customers customers-home">
+        <div class="customers-home__container container">
+          <h6 class="customers-home__title">Постійні клієнти</h6>
+          <ul class="customers-home__list">
+            <li class="customers-home__item">
               <a
-                class="customers-page__link"
+                class="customers-home__link"
                 target="_blank"
                 href="https://kahoot.it/"
               >
-                <svg class="customers-page__svg">
+                <svg class="customers-home__svg">
                   <use
-                    class="customers-page__use"
+                    class="customers-home__use"
                     href="./img/logo.svg#logoOne"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="customers-page__item">
+            <li class="customers-home__item">
               <a
-                class="customers-page__link"
+                class="customers-home__link"
                 target="_blank"
                 href="https://www.youtube.com/"
               >
-                <svg class="customers-page__svg">
+                <svg class="customers-home__svg">
                   <use
-                    class="customers-page__use"
+                    class="customers-home__use"
                     href="./img/logo2 (1).svg#logoTwo"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="customers-page__item">
+            <li class="customers-home__item">
               <a
-                class="customers-page__link"
+                class="customers-home__link"
                 target="_blank"
                 href="https://github.com/"
               >
-                <svg class="customers-page__svg">
+                <svg class="customers-home__svg">
                   <use
-                    class="customers-page__use"
+                    class="customers-home__use"
                     href="./img/logo3.svg#logoThree"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="customers-page__item">
+            <li class="customers-home__item">
               <a
-                class="customers-page__link"
+                class="customers-home__link"
                 target="_blank"
                 href="https://www.canva.com/"
               >
-                <svg class="customers-page__svg">
+                <svg class="customers-home__svg">
                   <use
-                    class="customers-page__use"
+                    class="customers-home__use"
                     href="./img/logo4.svg#logoFour"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="customers-page__item">
+            <li class="customers-home__item">
               <a
-                class="customers-page__link"
+                class="customers-home__link"
                 target="_blank"
                 href="https://htmlreference.io/"
               >
-                <svg class="customers-page__svg">
+                <svg class="customers-home__svg">
                   <use
-                    class="customers-page__use"
+                    class="customers-home__use"
                     href="./img/logo5.svg#logoFive"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="customers-page__item">
+            <li class="customers-home__item">
               <a
-                class="customers-page__link"
+                class="customers-home__link"
                 target="_blank"
                 href="https://www.tiktok.com/uk-UA/"
               >
-                <svg class="customers-page__svg">
+                <svg class="customers-home__svg">
                   <use
-                    class="customers-page__use"
+                    class="customers-home__use"
                     href="./img/logo6.svg#logoSix"
                   ></use>
                 </svg>
@@ -737,11 +739,11 @@
                 </li>
               </ul>
             </div>
-            <div class="footer__right">
-              <p class="footer__textright">Підпишіться на розсилку</p>
-              <div class="footer__togehter">
+            <div class="footer__right right-footer">
+              <p class="right-footer__text">Підпишіться на розсилку</p>
+              <div class="right-footer__togehter">
                 <input
-                  class="footer__input"
+                  class="right-footer__input"
                   id="adress"
                   autofocus
                   type="email"
@@ -749,11 +751,11 @@
                   autocomplete="on"
                   placeholder="E-mail"
                 />
-                <button class="footer__buttonright">
-                  <a href="" class="footer__linkright"> Підписатися </a>
-                  <svg class="footer__svgright">
+                <button class="right-footer__button">
+                  <a href="/" class="right-footer__link"> Підписатися </a>
+                  <svg class="right-footer__svg">
                     <use
-                      class="footer__useright"
+                      class="right-footer__use"
                       href="./img/icon send.svg#send"
                     ></use>
                   </svg>
