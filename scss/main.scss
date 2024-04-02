@@ -28,3 +28,6 @@ body {
 
 //! Import pages
 @import "./pages/home.scss", "./pages/portfolio.scss"; 
+
+//! Import utils
+@import "./utils/placeholders.scss", "./utils/mixins.scss";

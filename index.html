@@ -3,13 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./fonts/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -23,7 +16,7 @@
     <header class="header">
       <div class="header__container container">
         <div class="header__web">
-          <div class=header__logotip">
+          <div class="header__logotip">
             <a class="header__link" href="/"
               >Web<span class="header__studio">Studio</span>
             </a>
@@ -67,29 +60,29 @@
             </li>
           </ul>
         </div>
-          <div class="header__backdrop header__ishidden" data-modal>
-            <div class="header__modal">
-              <div class="header__times">
-                <button class="header__close" data-modal-close>
-                  <svg class="header__svg">
+          <div class="modal modal__backdrop modal__ishidden" data-modal>
+            <div class="modal__mod">
+              <div class="modal__times">
+                <button class="modal__close" data-modal-close>
+                  <svg class="modal__svg">
                     <use
-                      class="header__use"
+                      class="modal__use"
                       href="./img/close.svg#close"
                     ></use>
                   </svg>
                 </button>
               </div>
-              <div class="header__center">
-                <div class="header__backdrop backdrop-header">
-                <h1 class="backdrop-header__title">
+              <div class="modal__center">
+                <div class="modal__backdrop backdrop-modal">
+                <h1 class="backdrop-modal__title">
                   Залиште свої дані, ми вам передзвонимо
                 </h1>
-                <ul class="backdrop-header__list">
-                  <li class="backdrop-header__item">
-                    <p class="backdrop-header__text">Ім'я</p>
-                    <div class="backdrop-header__contacts">
+                <ul class="backdrop-modal__list">
+                  <li class="backdrop-modal__item">
+                    <p class="backdrop-modal__text">Ім'я</p>
+                    <div class="backdrop-modal__contacts">
                       <input
-                        class="backdrop-header__input backdrop-header__one"
+                        class="backdrop-modal__input backdrop-modal__one"
                         id="adress"
                         autofocus
                         type="text"
@@ -98,11 +91,11 @@
                       />
                     </div>
                   </li>
-                  <li class="backdrop-header__item">
-                    <p class="backdrop-header__text">Телефон</p>
-                    <div class="backdrop-header__contacts">
+                  <li class="backdrop-modal__item">
+                    <p class="backdrop-modal__text">Телефон</p>
+                    <div class="backdrop-modal__contacts">
                       <input
-                        class="backdrop-header__input backdrop-header__two"
+                        class="backdrop-modal__input backdrop-modal__two"
                         id="telefon"
                         autofocus
                         type="text"
@@ -111,11 +104,11 @@
                       />
                     </div>
                   </li>
-                  <li class="backdrop-header__item">
-                    <p class="backdrop-header__text">Пошта</p>
-                    <div class="backdrop-header__contacts">
+                  <li class="backdrop-modal__item">
+                    <p class="backdrop-modal__text">Пошта</p>
+                    <div class="backdrop-modal__contacts">
                       <input
-                        class="backdrop-header__input backdrop-header__three"
+                        class="backdrop-modal__input backdrop-modal__three"
                         id="adress"
                         autofocus
                         type="email"
@@ -124,11 +117,11 @@
                       />
                     </div>
                   </li>
-                  <li class="backdrop-header__item">
-                    <p class="backdrop-header__text">Коментар</p>
-                    <div class="backdrop-header__contacts">
+                  <li class="backdrop-modal__item">
+                    <p class="backdrop-modal__text">Коментар</p>
+                    <div class="backdrop-modal__contacts">
                       <textarea
-                        class="backdrop-header__textarea"
+                        class="backdrop-modal__textarea"
                         name="person-black"
                         id=""
                         cols="30"
@@ -139,14 +132,14 @@
                   </li>
                 </ul>
               </div>
-                <div class="header__terms terms-header">
-                  <input type="checkbox" class="terms-header__form" />
-                  <p class="terms-header__text">
+                <div class="modal__terms terms-modal">
+                  <input type="checkbox" class="terms-modal__form" />
+                  <p class="terms-modal__text">
                     Погоджуюся з розсилкою та приймаю
-                    <a class="terms-header__link">Умови договору</a>
+                    <a class="terms-modal__link">Умови договору</a>
                   </p>
                 </div>
-                <button class="header__button">Відправити</button>
+                <button class="modal__button">Відправити</button>
               </div>
             </div>
           </div>
