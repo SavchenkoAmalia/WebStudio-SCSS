@@ -139,10 +139,8 @@
     width: 100%;
     height: 100%;
     background: rgba(33, 150, 243, 0.9);
-    display: flex;
+    @include flexble();
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
