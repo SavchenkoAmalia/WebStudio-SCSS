@@ -1,3 +1,5 @@
+@import "../base/variables.scss";
+
 .header {
   margin-top: 32px;
   margin-bottom: 32px;
@@ -84,13 +86,13 @@
         transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     }
 
-    &:hover::after{
-        opacity: 1;
-        transform: translateX(1);
+    &:hover::after {
+      opacity: 1;
+      transform: translateX(1);
     }
 
-    &:hover{
-        color: #2196f3;
+    &:hover {
+      color: #2196f3;
     }
   }
 
@@ -111,31 +113,32 @@
 
   &__list {
     display: flex;
-  justify-content: end;
-  gap: 50px;
+    justify-content: end;
+    gap: 50px;
   }
 
   // .info-header__item
 
   &__item {
     display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 10px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 
-  &:hover{
-    color: #2196f3;
-    fill: #2196f3;
-  }
+    &:hover {
+      color: #2196f3;
+      fill: #2196f3;
+    }
 
-  &:hover &__link {
-    color: #2196f3;
-  }
+    &:hover .info-header__link {
+      color: #2196f3;
+    }
 
-  &:hover &__svg {
-    fill: #2196f3;
-  }
+    &:hover .info-header__svg {
+      fill: #2196f3;
+    }
   }
 
   // .info-header__line
@@ -144,17 +147,16 @@
     margin-bottom: 95px;
     width: 1440px;
     height: 0.5px;
-    background-color:$mainWeiht;
+    background-color: $mainWeiht;
   }
-
 
   // .info-header__svg
 
   &__svg {
     width: 20px;
-  height: 20px;
-  fill: #757575;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    height: 20px;
+    fill: #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   }
 
   // .info-header__use
@@ -166,12 +168,14 @@
 
   &__link {
     color: #757575;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+
   }
 }
