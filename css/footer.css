@@ -1,3 +1,19 @@
+.footer__links, .footer__title {
+  flex-shrink: 0;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+  gap: 10px;
+}
+
+.right-footer__button, .right-footer__input {
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  padding: 10px;
+}
+
 .footer {
   width: 100%;
   background: #2f303a;
@@ -39,26 +55,12 @@
 .footer__title {
   width: 231px;
   height: 21px;
-  flex-shrink: 0;
   color: #fff;
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px; /* 171.429% */
-  letter-spacing: 0.42px;
-  margin-bottom: 10px;
 }
 .footer__links {
   width: 136px;
   height: 21px;
-  flex-shrink: 0;
   color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px; /* 171.429% */
-  letter-spacing: 0.42px;
-  gap: 10px;
 }
 .footer__center {
   margin-left: 85px;
@@ -129,27 +131,22 @@
 }
 .right-footer__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
   width: 358px;
   height: 50px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: rgba(33, 150, 243, 0);
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  padding: 10px;
 }
 .right-footer__button {
-  border-radius: 4px;
   width: 200px;
   height: 50px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #2196f3;
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 10px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .right-footer__button:hover {
