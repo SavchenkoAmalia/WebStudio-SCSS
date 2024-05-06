@@ -14,10 +14,34 @@
 
   &__gallary {
     margin-bottom: 94px;
-    background-image: url(../img/Img.jpg);
+    background-image: url("../../img/webstudio-desktop@1x.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("../../img/webstudio-desktop@2x.jpg");
+  }
+  
+  @media screen and (max-width:$tablet) {
+    background-image: url("../../img/webstudio-tablet@1x.jpg");
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("../../img/webstudio-tablet@2x.jpg");
+  }
+  }
 
+  @media screen and (max-width:$mobile) {
+    background-image: url("../../img/webstudio-mobile@1x.jpg");
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("../../img/webstudio-mobile@2x.jpg");
+  }
+  }
+    
     &::after {
       top: 0;
       left: 0;
