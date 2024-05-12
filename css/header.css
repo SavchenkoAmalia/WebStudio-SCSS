@@ -14,7 +14,7 @@
   font-weight: 700;
   letter-spacing: 0.78px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .header__link {
     padding-top: 20px;
   }
@@ -87,7 +87,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .header__list {
     margin-left: 20px;
   }
@@ -126,7 +126,7 @@
   justify-content: end;
   gap: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .info-header__list {
     flex-direction: column;
     padding-right: 5px;
